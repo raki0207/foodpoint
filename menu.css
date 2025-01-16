@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.navbar {
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem;
+}
+
+.logo img {
+    margin-left: 90px;
+    height: 50px;
+    width: auto;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    margin-right: 10px;
+}
+
+.links li {
+    display: inline;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #FFD700;
+}
+
+.links .active {
+    color: darkblue;
+}
+
+.immage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.immage img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.immage img:hover {
+    transform: scale(1.05);
+}
+.immage h1 {
+    text-align: center;
+    color: lightgreen;
+    margin-top: 1rem;
+}
+.immage h1:hover {
+    color: darkgreen;
+}
+.immage h2 {
+    text-align: center;
+    color: red;
+    margin-top: 1rem;
+}
+
+.immage h2:hover {
+    color: darkred;
+}
+.content {
+    margin-top: -10px;
+    background-color: lightcoral;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.content {
+    margin-top: -10px;
+    background-color: lightcoral;
+    display: flex;
+}
+
+.first {
+    margin-left: 40px; 
+}
+
+hr {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.second {
+    margin-left: 80px;
+}
+
+.last {
+    margin-left: 80px;
+}
+
+footer {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .logo img {
+        height: 100px;
+    }
+
+    .immage {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .immage img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        flex-direction: column; 
+    }
+
+    .first, .second, .last {
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    hr {
+        margin-left: 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .links a {
+        font-size: 1rem;
+    }
+
+    .immage h2 {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        padding: 10px; 
+    }
+}

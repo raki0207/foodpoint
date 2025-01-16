@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.navbar {
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem;
+}
+
+.logo img {
+    margin-left: 90px;
+    height: 50px;
+    width: auto;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    margin-right: 10px;
+}
+
+.links li {
+    display: inline;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #FFD700;
+}
+
+.links .active {
+    color: darkblue;
+}
+
+.vegmenu {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: green;
+    text-align: center;
+}
+
+.vegs {
+    margin-top: 15px;
+    float: left;
+    margin-left: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.veg {
+    margin-top: 15px;
+    float: right;
+    margin-right: 370px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.bgmenu {
+    float: right;
+    margin-right: -430px;
+}
+
+.content {
+    margin-top: -10px;
+    background-color: lightcoral;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.content {
+    margin-top: 450px;
+    background-color: lightcoral;
+    display: flex;
+}
+
+.first {
+    margin-left: 40px; 
+}
+
+hr {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.second {
+    margin-left: 80px;
+}
+
+.last {
+    margin-left: 80px;
+}
+
+footer {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo img {
+        height: 100px;
+    }
+    .links {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0; 
+        margin-right: 0;
+    }
+
+    .vegs, .veg {
+        float: none;
+        margin: 20px auto; 
+        width: 80%; 
+        text-align: center;
+    }
+
+    .bgmenu {
+        float: none;
+        margin: 20px auto;
+    }
+
+    .bgmenu img {
+        height: auto;
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .first, .second, .last {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    hr {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .links a {
+        font-size: 20px;
+    }
+
+    .vegmenu {
+        font-size: 24px;
+    }
+
+    .vegs ul, .veg ul {
+        font-size: 18px;
+    }
+
+    .bgmenu img {
+        height: auto; 
+        width: 100%;
+    }
+}

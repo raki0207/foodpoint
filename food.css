@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.navbar {
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem;
+}
+
+.logo img {
+    margin-left: 90px;
+    height: 50px;
+    width: auto;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    margin-right: 10px;
+}
+
+.links li {
+    display: inline;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #FFD700;
+}
+
+.links .active {
+    color: darkblue;
+}
+
+.bgg {
+    position: relative;
+    text-align: center;
+}
+
+.bg-image {
+    width: 100%;
+    height: auto;
+}
+
+.bgg h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content {
+    margin-top: -10px;
+    background-color: lightcoral;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.content {
+    margin-top: -10px;
+    background-color: lightcoral;
+    display: flex;
+}
+
+.first {
+    margin-left: 40px; 
+}
+
+hr {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.second {
+    margin-left: 80px;
+}
+
+.last {
+    margin-left: 80px;
+}
+
+footer {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .logo img {
+        height: 100px;
+    }
+    .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .bgg h1 {
+        font-size: 30px;
+    }
+    .content {
+        flex-direction: column; 
+    }
+
+    .first, .second, .last {
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    hr {
+        margin-left: 0; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+    .links a {
+        font-size: 16px;
+    }
+    .bgg h1 {
+        font-size: 24px;
+    }
+    .content {
+        padding: 10px;
+    }
+    .first, .second, .last {
+        flex: 1 1 100%;
+    }
+}
